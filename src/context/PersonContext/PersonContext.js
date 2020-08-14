@@ -1,16 +1,21 @@
-import React from "react";
+import React, { useState } from "react";
 
 const PersonsContext = React.createContext({
 	persons: [],
-	changePersons: () => {},
+	changePersons: (persons) => {},
 });
 
-const contextValue = {};
+export const PersonsContextProvider = (props) => {
 
-export const PersonsContextProvider = (props) => (
-	<PersonsContext.Provider value={contextValue}>
-		{props.children}
-	</PersonsContext.Provider>
-);
+    const [ persons, setPersons ] = useState([]);
+    const changePersons = (persons) => {
+        setPersons(persons);
+    }
+	return (
+		<PersonsContext.Provider value={{persons, changePersons }}>
+			{props.children}
+		</PersonsContext.Provider>
+	);
+};
 
 export default PersonsContext;
