@@ -5,14 +5,20 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { createStore } from "redux";
 import { Provider } from "react-redux";
+import { BrowserRouter } from "react-router-dom";
 
 import Reducer from "./store/reducer/reducer";
+import { PersonsContextProvider } from "./context/PersonContext/PersonContext";
 
 const store = createStore(Reducer);
 
 ReactDOM.render(
 	<Provider store={store}>
-		<App />
+    <BrowserRouter>
+		<PersonsContextProvider>
+      <App />
+    </PersonsContextProvider>
+    </BrowserRouter>
 	</Provider>,
 	document.getElementById("root")
 );
