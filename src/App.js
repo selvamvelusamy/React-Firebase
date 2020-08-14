@@ -1,8 +1,18 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import logo from './logo.svg';
 import './App.css';
+import FireStore from "./Firebase/firebase";
 
 function App() {
+
+  useEffect(() => {
+    FireStore.collection('collection1').get()
+    .then(data => {
+      data.forEach(e => {
+        console.log(e.data());
+      })
+    });
+  }, [])
   return (
     <div className="App">
       <header className="App-header">
