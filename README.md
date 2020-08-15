@@ -7,7 +7,7 @@ Node JS & npm
 
 ## Setting Up
  ```sh
-cd Charity-Funds
+cd React-Firebase
 npm i (or) yarn
 npm start
 ```
