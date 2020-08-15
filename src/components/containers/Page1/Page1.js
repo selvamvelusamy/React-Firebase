@@ -1,7 +1,7 @@
 import React, { useEffect, useContext } from "react";
 import { connect } from "react-redux";
 
-import FireStore from "../../../firebase/firebase";
+import FireStore from "../../../Firebase/firebase";
 import Persons from "../../ui-blocks/Persons/Persons";
 import { getPersons } from "../../../store/action/action";
 import Spinner from "../../ui-blocks/Spinner/Spinner";
