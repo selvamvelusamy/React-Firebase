@@ -5,6 +5,7 @@ import FireStore from "../../../firebase/firebase";
 import Persons from "../../ui-blocks/Persons/Persons";
 import SpinnerContext from "../../../context/SpinnerContext/SpinnerContext";
 import Spinner from "../../ui-blocks/Spinner/Spinner";
+import NavBar from "../../ui-blocks/NavBar/NavBar";
 
 const Page2 = (props) => {
 	const spinnerContext = useContext(SpinnerContext);
@@ -28,6 +29,7 @@ const Page2 = (props) => {
 	return (
 		<>
 			{spinnerContext.spinner && <Spinner />}
+			<NavBar></NavBar>
 			<Persons personsList={personsContext.persons}></Persons>
 		</>
 	);

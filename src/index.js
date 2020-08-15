@@ -16,11 +16,11 @@ const store = createStore(Reducer);
 ReactDOM.render(
 	<Provider store={store}>
 		<BrowserRouter>
-    <SpinnerContextProvider>
-			<PersonsContextProvider>
+			<SpinnerContextProvider>
+				<PersonsContextProvider>
 					<App />
-			</PersonsContextProvider>
-      </SpinnerContextProvider>
+				</PersonsContextProvider>
+			</SpinnerContextProvider>
 		</BrowserRouter>
 	</Provider>,
 	document.getElementById("root")

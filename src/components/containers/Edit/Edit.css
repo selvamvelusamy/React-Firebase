@@ -1,0 +1,37 @@
+.title-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 48px;
+    background-color: rgb(146, 38, 209);
+    color: #fff;
+    font-weight: bold;
+    padding-left: 16px;
+}
+    
+
+.data-container form {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.data-container .MuiOutlinedInput-root, 
+.data-container .MuiFormControl-root {
+    width: 40%;
+}
+.data-container .MuiFormControl-root {
+    margin-right: 16px;
+}
+.data-container .MuiInputBase-root {
+    width: 100%;
+}
+
+.action-buttons {
+    display: flex;
+    justify-content: center;
+}
+.action-buttons .MuiButton-outlined {
+    margin: 12px;
+}

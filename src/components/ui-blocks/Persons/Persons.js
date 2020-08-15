@@ -5,7 +5,7 @@ import './Persons.css';
 
 const Persons = (props) => {
 	let persons = props.personsList.map((person, i) => (
-		<Person key={i} name={person.name} place={person.place}></Person>
+		<Person key={person.id} id={person.id} name={person.name} place={person.place}></Person>
 	));
 	return <div className="persons-container">{persons}</div>;
 };
