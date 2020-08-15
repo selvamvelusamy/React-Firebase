@@ -19,7 +19,7 @@ const Edit = () => {
             setName(person.name);
             setPlace(person.place);
         })
-    }, [])
+    }, [id, search])
 
     const saveChangesHandler = () => {
         FireStore.collection(`collection${search.substring(1) === 'page1' ? '1':'2'}`).doc(id).update({
