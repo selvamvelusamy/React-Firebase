@@ -3,7 +3,7 @@ import { useParams, useLocation, useHistory } from "react-router-dom";
 import  Button from "@material-ui/core/Button";
 import TextField from '@material-ui/core/TextField';
 
-import FireStore from "../../../firebase/firebase";
+import FireStore from "../../../Firebase/firebase";
 import './Edit.css';
 
 const Edit = () => {
