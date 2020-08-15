@@ -9,16 +9,19 @@ import { BrowserRouter } from "react-router-dom";
 
 import Reducer from "./store/reducer/reducer";
 import { PersonsContextProvider } from "./context/PersonContext/PersonContext";
+import { SpinnerContextProvider } from "./context/SpinnerContext/SpinnerContext";
 
 const store = createStore(Reducer);
 
 ReactDOM.render(
 	<Provider store={store}>
-    <BrowserRouter>
-		<PersonsContextProvider>
-      <App />
-    </PersonsContextProvider>
-    </BrowserRouter>
+		<BrowserRouter>
+			<SpinnerContextProvider>
+				<PersonsContextProvider>
+					<App />
+				</PersonsContextProvider>
+			</SpinnerContextProvider>
+		</BrowserRouter>
 	</Provider>,
 	document.getElementById("root")
 );

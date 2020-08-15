@@ -1,0 +1,20 @@
+
+
+.nav-bar-container {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 48px;
+    background-color: rgb(146, 38, 209);
+    color: #fff;
+}
+
+.nav-bar-container a {
+    text-decoration: none;
+    color: #fff;
+    margin-right: 16px;
+}
+
+.nav-bar-container .active-navlink-class {
+    font-weight: bold;
+}
