@@ -1,7 +1,7 @@
 import React, { useContext, useEffect } from "react";
 
 import PersonsContext from "../../../context/PersonContext/PersonContext";
-import FireStore from "../../../firebase/firebase";
+import FireStore from "../../../Firebase/firebase";
 import Persons from "../../ui-blocks/Persons/Persons";
 import SpinnerContext from "../../../context/SpinnerContext/SpinnerContext";
 import Spinner from "../../ui-blocks/Spinner/Spinner";
