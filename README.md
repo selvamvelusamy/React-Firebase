@@ -11,8 +11,3 @@ cd Charity-Funds
 npm i (or) yarn
 npm start
 ```
- 
-## Testing
-```sh
- npm test
-```
